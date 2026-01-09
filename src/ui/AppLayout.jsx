@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../ui/Header";
+import Footer from "../ui/Footer";
 import SideBar from "../ui/SideBar";
 import styled from "styled-components";
 
@@ -12,7 +13,7 @@ const StyledAppLayout = styled.div`
 
 const Main = styled.main`
   background-color: var(--color-bg);
-  padding: 4rem 3rem 6.4rem;
+  padding: 4rem 3rem;
   overflow: auto;
   min-width: 0;
 `;

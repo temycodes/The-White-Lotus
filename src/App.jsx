@@ -13,7 +13,7 @@ import Booking from "./pages/Booking";
 import CheckIn from "./pages/CheckIn";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
 import { Toaster } from "react-hot-toast";
 
 import ProtectedRoute from "./ui/ProtectedRoute";
@@ -32,7 +32,7 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ReactQueryDevtools initialIsOpen={false} />
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
       <GlobalStyles />
       <BrowserRouter>
         <ErrorBoundary FallbackComponent={ErrorFallback} onReset={() => window.location.replace("/dashboard")}>
