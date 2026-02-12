@@ -1,5 +1,4 @@
-import supabase from "./Supabase";
-import { supabaseUrl } from "./Supabase";
+import supabase, { supabaseUrl } from "./Supabase";
 
 // FETCH all cabins from the database
 export async function getCabins() {
