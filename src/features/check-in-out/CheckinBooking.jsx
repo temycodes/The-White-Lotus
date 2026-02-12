@@ -13,8 +13,9 @@ import Spinner from "../../ui/Spinner";
 import { useEffect, useState } from "react";
 import Checkbox from "../../ui/Checkbox";
 import { formatCurrency } from "../../utils/helpers";
-import useCheckin from "./useCheckIn";
+
 import useSettings from "../settings/useSettings";
+import useCheckin from "./useCheckin";
 
 const Box = styled.div`
   /* Box */

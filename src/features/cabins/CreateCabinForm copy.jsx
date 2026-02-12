@@ -31,13 +31,12 @@ function CreateCabinForm() {
 
   // for submitting the form data (newCabin)
   function onFormSubmit(data) {
-    console.log(data);
     mutate({ ...data, image: data.image?.[0] });
   }
 
   // for handling errors from formState fn
   function onError(errors) {
-    console.log(errors);
+    return errors;
   }
 
   return (

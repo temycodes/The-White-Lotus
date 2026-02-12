@@ -11,7 +11,6 @@ function useSettings() {
     queryFn: getSettings,
   });
 
-  console.log(settings);
   return { isPending, settings };
 }
 

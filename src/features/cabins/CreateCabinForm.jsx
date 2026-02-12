@@ -38,7 +38,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
             reset();
             onCloseModal?.();
           },
-        }
+        },
       );
     else
       createMutate(
@@ -48,13 +48,13 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
             reset();
             onCloseModal?.();
           },
-        }
+        },
       );
   }
 
   // for handling errors from formState fn
   function onError(errors) {
-    console.log(errors);
+    throw new Error(`${Object.values(errors)}`);
   }
 
   return (

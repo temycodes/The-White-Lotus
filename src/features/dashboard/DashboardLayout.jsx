@@ -22,8 +22,6 @@ function DashboardLayout() {
   const { isLoading: isLoadingCabins, cabins } = useCabins();
   if (isLoading || isLoadingStays || isLoadingCabins) return <Spinner />;
 
-  console.log(bookings);
-
   return (
     <StyledDashboardLayout>
       {/* stats will be replaced by 4 stat */}

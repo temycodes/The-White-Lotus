@@ -7,7 +7,6 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
 if (!supabaseUrl || !supabaseKey) {
   throw new Error("Missing Supabase environment variables");
 }
-console.log(supabaseUrl);
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
